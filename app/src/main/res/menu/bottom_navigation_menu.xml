@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_store"
+        android:icon="@drawable/ic_store_black_24dp"
+        android:title="ร้านค้า">
+    </item>
+
+    <item android:id="@+id/ic_promotion"
+        android:icon="@drawable/ic_whatshot_black_24dp"
+        android:title="โปรโมชั่น">
+    </item>
+
+</menu>

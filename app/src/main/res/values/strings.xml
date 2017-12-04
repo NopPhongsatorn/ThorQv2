@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ThorQ</string>
+    <string name="facebook_app_id">320589838350101</string>
+    <string name="fb_login_protocol_scheme">fb320589838350101</string>
+    <string name="not_log_in" />
+    <string name="log_out">log_out</string>
+    <string name="revoke">revoke</string>
+    <string name="not_close_session" />
+    <string name="not_revoke" />
+    <string name="not_firebase_auth">not firebase auth</string>
+    <string name="cancel_login">cancel login</string>
+    <string name="error_login">error login</string>
+    <string name="firebase_error_login">firebase error logion</string>
+
+</resources>
