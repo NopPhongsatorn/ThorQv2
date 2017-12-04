@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
 
-        getSupportActionBar().setTitle("This is iPhone X");
+        getSupportActionBar().setTitle("This is iPhone Xi");
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottomNaview_Bar);
         BottomNavigationViewHelper.disableShiftMode(navigation);
