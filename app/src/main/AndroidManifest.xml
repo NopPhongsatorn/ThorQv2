@@ -49,8 +49,6 @@
         <activity
             android:name=".MainActivity" />
 
-        <activity android:name=".StoreActivity" />
-        <activity android:name=".PromoActivity" />
     </application>
 
 </manifest>

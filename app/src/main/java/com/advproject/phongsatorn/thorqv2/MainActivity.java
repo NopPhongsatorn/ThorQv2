@@ -90,25 +90,6 @@ public class MainActivity extends AppCompatActivity{
         mSectionPagerAdapter = new SectionPagerAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.container);
 
-//        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNaview_Bar);
-//        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-
-//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction transaction = fragmentManager.beginTransaction();
-//                switch (item.getItemId()) {
-//                    case R.id.ic_store:
-//                        transaction.replace(R.id.relLayoutMiddle, new com.advproject.phongsatorn.thorqv2.HomeFragment()).commit();
-//                        return true;
-//                    case R.id.ic_promotion:
-//                        transaction.replace(R.id.relLayoutMiddle, new com.advproject.phongsatorn.thorqv2.PromoFragment()).commit();
-//                        return true;
-//                }
-//                return false;
-//            }
-//        });
     }
 
     @Override
