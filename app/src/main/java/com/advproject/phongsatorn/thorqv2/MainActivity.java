@@ -109,4 +109,6 @@ public class MainActivity extends AppCompatActivity{
         LoginManager.getInstance().logOut();
         goLoginScreen();
     }
+    public void bas(){}
 }
+//euyriwuyriwe
