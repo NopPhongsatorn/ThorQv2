@@ -11,20 +11,20 @@
         android:layout_height="match_parent"
         android:id="@+id/relLayout">
 
-        <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/relLayoutTopBar"
-            android:layout_alignParentTop="true">
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/relLayoutTopBar"-->
+            <!--android:layout_alignParentTop="true">-->
 
-            <!--<android.support.design.widget.AppBarLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:fitsSystemWindows="true">-->
+            <!--&lt;!&ndash;<android.support.design.widget.AppBarLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:fitsSystemWindows="true">&ndash;&gt;-->
 
-            <!--</android.support.design.widget.AppBarLayout>-->
+            <!--&lt;!&ndash;</android.support.design.widget.AppBarLayout>&ndash;&gt;-->
 
-        </android.support.v7.widget.Toolbar>
+        <!--</android.support.v7.widget.Toolbar>-->
 
         <RelativeLayout
             android:layout_width="match_parent"

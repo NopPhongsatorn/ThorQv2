@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/img"
+        android:text="Title"
+        android:textColor="#333"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginBottom="11dp"
+        android:text="Description"
+        android:textColor="#058"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtQue"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/txtDescription"
+        android:text="Q" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="26dp"
+        android:text="กรุณาเลือกประเภท" />
+
+    <ImageView
+        android:id="@+id/table1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/num12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/table1"
+        android:layout_alignStart="@+id/table1"
+        android:layout_below="@+id/table1"
+        android:layout_marginTop="11dp"
+        android:text="1-2 ท่าน" />
+
+    <ImageView
+        android:id="@+id/table2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/num34"
+        android:layout_alignTop="@+id/table1"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/num34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num12"
+        android:layout_alignBottom="@+id/num12"
+        android:layout_alignLeft="@+id/txtDescription"
+        android:layout_alignStart="@+id/txtDescription"
+        android:text="3-4 ท่าน" />
+
+    <ImageView
+        android:id="@+id/table3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/txtQue"
+        android:layout_alignStart="@+id/txtQue"
+        android:layout_alignTop="@+id/table2"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num34"
+        android:layout_alignBottom="@+id/num34"
+        android:layout_alignLeft="@+id/table3"
+        android:layout_alignStart="@+id/table3"
+        android:text="5 ท่านขึ้นไป" />
+
+    <TextView
+        android:id="@+id/numsit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/num12"
+        android:layout_marginTop="34dp"
+        android:text="กรุณาใส่จำนวนที่นั่ง" />
+
+    <Button
+        android:id="@+id/reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background = "#66FF66"
+        android:textColor="#FFFFFF"
+        android:text="จองเลย" />
+
+</RelativeLayout>
