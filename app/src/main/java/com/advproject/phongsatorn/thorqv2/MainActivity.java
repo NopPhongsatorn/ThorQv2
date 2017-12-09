@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
@@ -95,7 +96,20 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.top_navigation_menu, menu);
+
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id==R.id.ic_account){
+            Toast.makeText(this, "User Clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, UserActivity.class));
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void goLoginScreen() {
