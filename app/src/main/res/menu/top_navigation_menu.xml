@@ -5,7 +5,8 @@
         android:id="@+id/ic_account"
         android:icon="@drawable/ic_account_box_black_24dp"
         android:title="Account"
-        app:showAsAction="always">
+        app:showAsAction="always"
+        >
     </item>
 
 </menu>
