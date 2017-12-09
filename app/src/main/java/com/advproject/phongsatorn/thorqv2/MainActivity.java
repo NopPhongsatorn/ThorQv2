@@ -123,6 +123,5 @@ public class MainActivity extends AppCompatActivity{
         LoginManager.getInstance().logOut();
         goLoginScreen();
     }
-   //iuyijegfdgfd
 }
 
