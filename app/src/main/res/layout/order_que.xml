@@ -4,10 +4,29 @@
     android:layout_height="match_parent"
     >
 
+    <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/relLayoutTopBar"
+    android:background="@drawable/white_grey_border_bottom"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:src="@drawable/ic_arrow_back_grey_600_24dp" />
+
+    </android.support.v7.widget.Toolbar>
+
     <RelativeLayout
         android:id="@+id/topRelative"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayoutTopBar"
+        android:layout_marginTop="10dp">
 
         <ImageView
             android:id="@+id/img"
@@ -30,35 +49,64 @@
             android:textColor="#333"
             android:textSize="20sp" />
 
+        <ImageView
+            android:id="@+id/locaIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:layout_below="@+id/txtTitle"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="9dp"
+            />
+
         <TextView
             android:id="@+id/txtDescription"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_toRightOf="@+id/img"
+            android:layout_toRightOf="@+id/locaIcon"
             android:layout_below="@+id/txtTitle"
-            android:layout_marginLeft="9dp"
+            android:layout_marginLeft="4dp"
             android:text="Description"
             android:textColor="#058"
             android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/qIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hourglass_empty_black_24dp"
+            android:layout_below="@+id/locaIcon"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="9dp"
+            />
+
+        <TextView
+            android:id="@+id/placeQue"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/qIcon"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/txtDescription"
+            android:text="รออีก : " />
 
         <TextView
             android:id="@+id/txtQue"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_toRightOf="@+id/img"
-            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/placeQue"
+            android:layout_marginLeft="5dp"
             android:layout_below="@+id/txtDescription"
             android:text="Q" />
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_below="@+id/topRelative"
-        android:text="กรุณาเลือกประเภท" />
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_below="@+id/topRelative"-->
+        <!--android:text="กรุณาเลือกประเภท" />-->
 
     <!--<RelativeLayout-->
         <!--android:id="@+id/midRelative"-->
@@ -71,96 +119,150 @@
 
     <!--</RelativeLayout>-->
 
-    <LinearLayout
-        android:id="@+id/imgLinear"
-        android:weightSum="3"
-        android:gravity="center"
-        android:layout_below="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/imgLinear"-->
+        <!--android:weightSum="3"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
 
-        <RelativeLayout
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/table1"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
+        <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/table1"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:src="@mipmap/ic_launcher" />-->
 
-            <TextView
-                android:id="@+id/num12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/table1"
-                android:text="1-2 ท่าน" />
-        </RelativeLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/num12"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/table1"-->
+                <!--android:text="1-2 ท่าน" />-->
+        <!--</RelativeLayout>-->
 
-        <RelativeLayout
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/table2"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
+        <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/table2"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:src="@mipmap/ic_launcher" />-->
 
-            <TextView
-                android:id="@+id/num34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/table2"
-                android:text="3-4 ท่าน" />
-        </RelativeLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/num34"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/table2"-->
+                <!--android:text="3-4 ท่าน" />-->
+        <!--</RelativeLayout>-->
 
-        <RelativeLayout
-            android:layout_weight="1"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/table3"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@mipmap/ic_launcher" />
+        <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/table3"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:src="@mipmap/ic_launcher" />-->
 
-            <TextView
+            <!--<TextView-->
 
-                android:id="@+id/num5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/table3"
-                android:text="5 ท่านขึ้นไป" />
-        </RelativeLayout>
+                <!--android:id="@+id/num5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/table3"-->
+                <!--android:text="5 ท่านขึ้นไป" />-->
+        <!--</RelativeLayout>-->
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 
     <TextView
         android:id="@+id/numsit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_below="@+id/imgLinear"
-        android:layout_marginTop="34dp"
-        android:text="กรุณาใส่จำนวนที่นั่ง" />
+        android:layout_below="@+id/topRelative"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="9dp"
+        android:textColor="#000"
+        android:text="กรุณาใส่จำนวนที่นั่ง"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numsit"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/minusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="107sp"
+            android:src="@drawable/ic_remove_circle_teal_400_48dp"
+            android:textSize="50sp"
+            android:background="#fafafa"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/counterTxt"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="1"
+            android:layout_marginTop="40dp"
+            android:textSize="80sp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/plusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_weight="1"
+            android:background="#fafafa"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_circle_teal_400_48dp"
+            android:text="+"
+            android:textSize="50sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/reserve"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:background = "#66FF66"
+        android:background = "#61bb93"
         android:textColor="#FFFFFF"
-        android:text="จองเลย" />
+        android:text="จองเลย"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="จองคิว"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
