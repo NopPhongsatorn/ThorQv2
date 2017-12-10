@@ -49,7 +49,9 @@
         <activity
             android:name=".OrderQ"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".UserActivity"></activity>
+        <activity
+            android:name=".UserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
