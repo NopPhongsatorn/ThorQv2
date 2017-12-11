@@ -18,8 +18,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
     private List<OrderModel> list;
     private Context context;
 
-
-
     public OrderAdapter(Context c , List<OrderModel> list){
         this.list = list;
         this.context = c;
@@ -27,7 +25,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
 
     @Override
     public OrderViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         return new OrderViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_list, parent, false));
     }
 
@@ -51,7 +48,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
                          intent.putExtra("img",list.get(position).getImg());
 
                          context.startActivity(intent);
-                         Log.d("CLICK", "onContextItemSelected: 121123121321");
              }
          });
     }
@@ -60,7 +56,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
     public int getItemCount() {
         return list.size();
     }
-    class OrderViewHolder extends RecyclerView.ViewHolder{
+
+    public class OrderViewHolder extends RecyclerView.ViewHolder{
         TextView title, desc, que;
         ImageView img;
 
