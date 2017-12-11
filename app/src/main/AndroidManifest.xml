@@ -52,6 +52,9 @@
         <activity
             android:name=".UserActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReserveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

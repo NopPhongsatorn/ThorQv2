@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,9 +15,10 @@ import com.squareup.picasso.Picasso;
 public class OrderQ extends AppCompatActivity {
 
     private ImageButton backBtn;
-    private TextView counterTxt;
+    private TextView counterTxt,title,description;
     private ImageButton plusBtn;
     private ImageButton minusBtn;
+    private Button reserveBtn;
     private int counter;
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
@@ -38,41 +40,43 @@ public class OrderQ extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_que);
 
-        TextView title = (TextView)findViewById(R.id.txtTitle);
+        title = (TextView)findViewById(R.id.txtTitle);
         String titleShow = getIntent().getExtras().getString("Title");
         title.setText(titleShow);
 
-        TextView description = (TextView)findViewById(R.id.txtDescription);
+        description = (TextView)findViewById(R.id.txtDescription);
         String descShow = getIntent().getExtras().getString("Description");
         description.setText(descShow);
 
-        TextView que = (TextView)findViewById(R.id.txtQue);
+        final TextView que = (TextView)findViewById(R.id.txtQue);
         int queShow = getIntent().getExtras().getInt("Que");
         que.setText(queShow+"");
 
-        ImageView imgOrder = (ImageView)findViewById(R.id.img);
-
+        final ImageView imgOrder = (ImageView)findViewById(R.id.img);
         Picasso
                 .with(this)
                 .load(getIntent().getExtras().getString("img"))
                 .into(imgOrder);
 
-//        ImageView img1 = (ImageView) findViewById(R.id.table1);
-//        ImageView img2 = (ImageView) findViewById(R.id.table2);
-//        ImageView img3 = (ImageView) findViewById(R.id.table3);
-//        int imgResource1 = getResources().getIdentifier("@drawable/table1", null , this.getPackageName());
-//        int imgResource2 = getResources().getIdentifier("@drawable/table2", null , this.getPackageName());
-//        int imgResource3 = getResources().getIdentifier("@drawable/table3", null , this.getPackageName());
-//        img1.setImageResource(imgResource1);
-//        img2.setImageResource(imgResource2);
-//        img3.setImageResource(imgResource3);
-
         backBtn = (ImageButton) findViewById(R.id.backBtn);
-
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OrderQ.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        reserveBtn = (Button) findViewById(R.id.reserveBtn);
+        reserveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OrderQ.this, ReserveActivity.class);
+                intent.putExtra("Title",title.getText());
+                intent.putExtra("Description",description.getText());
+                intent.putExtra("Que",Integer.parseInt(que.getText().toString()));
+                intent.putExtra("img",getIntent().getExtras().getString("img"));
+
                 startActivity(intent);
             }
         });

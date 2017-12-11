@@ -18,8 +18,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
     private List<OrderModel> list;
     private Context context;
 
-
-
     public OrderAdapter(Context c , List<OrderModel> list){
         this.list = list;
         this.context = c;
