@@ -67,6 +67,10 @@ public class OrderQ extends AppCompatActivity {
             }
         });
 
+        counterTxt = (TextView) findViewById(R.id.counterTxt);
+        String counterShow = getIntent().getExtras().getString("Counter");
+        counterTxt.setText(counterShow);
+
         reserveBtn = (Button) findViewById(R.id.reserveBtn);
         reserveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,12 +80,12 @@ public class OrderQ extends AppCompatActivity {
                 intent.putExtra("Description",description.getText());
                 intent.putExtra("Que",Integer.parseInt(que.getText().toString()));
                 intent.putExtra("img",getIntent().getExtras().getString("img"));
+                intent.putExtra("Counter",counterTxt.getText());
 
                 startActivity(intent);
             }
         });
 
-        counterTxt = (TextView) findViewById(R.id.counterTxt);
         plusBtn = (ImageButton) findViewById(R.id.plusBtn);
         plusBtn.setOnClickListener(clickListener);
         minusBtn = (ImageButton) findViewById(R.id.minusBtn);

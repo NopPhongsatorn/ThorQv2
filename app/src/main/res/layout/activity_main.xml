@@ -11,21 +11,6 @@
         android:layout_height="match_parent"
         android:id="@+id/relLayout">
 
-        <!--<android.support.v7.widget.Toolbar-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:id="@+id/relLayoutTopBar"-->
-            <!--android:layout_alignParentTop="true">-->
-
-            <!--&lt;!&ndash;<android.support.design.widget.AppBarLayout&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-                <!--&lt;!&ndash;android:fitsSystemWindows="true">&ndash;&gt;-->
-
-            <!--&lt;!&ndash;</android.support.design.widget.AppBarLayout>&ndash;&gt;-->
-
-        <!--</android.support.v7.widget.Toolbar>-->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,49 +25,6 @@
 
             </android.support.v4.view.ViewPager>
 
-            <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <ImageView
-            android:id="@+id/photoImageView"
-            android:layout_width="58dp"
-            android:layout_height="58dp"
-            android:background="@color/colorAccent"
-            android:layout_margin="8dp"/>
-
-            <TextView
-            android:id="@+id/nameTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="24sp"/>
-
-            <TextView
-            android:id="@+id/emailTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="16sp"/>
-
-            <TextView
-            android:id="@+id/idTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="14sp"/>
-
-            <Button
-            android:text="@string/log_out"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:onClick="logout"/>
-
-            </LinearLayout>
 
         </RelativeLayout>
 
@@ -100,39 +42,6 @@
                 app:menu="@menu/bottom_navigation_menu">
 
             </android.support.design.widget.BottomNavigationView>
-
-            <!--<android.support.design.widget.AppBarLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="bottom">-->
-
-                <!--<android.support.v7.widget.Toolbar-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:id="@+id/toolbarBottom"-->
-                    <!--android:background="@drawable/white_grey_border_top">-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:weightSum="100"-->
-                        <!--android:orientation="horizontal">-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:layout_weight="50"-->
-                            <!--android:src="@drawable/ic_store_black_24dp"/>-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:layout_weight="50"-->
-                            <!--android:src="@drawable/ic_whatshot_black_24dp"/>-->
-                    <!--</LinearLayout>-->
-
-                <!--</android.support.v7.widget.Toolbar>-->
-            <!--</android.support.design.widget.AppBarLayout>-->
 
         </RelativeLayout>
 

@@ -37,6 +37,10 @@ public class ReserveActivity extends AppCompatActivity {
                 .load(getIntent().getExtras().getString("img"))
                 .into(imgOrder);
 
+        TextView counterTxt = (TextView)findViewById(R.id.counterTxt);
+        String counterShow = getIntent().getExtras().getString("Counter");
+        counterTxt.setText(counterShow);
+
         backHomeBtn = (Button) findViewById(R.id.backHomeBtn);
         backHomeBtn.setOnClickListener(new View.OnClickListener() {
             @Override

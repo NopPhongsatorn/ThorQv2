@@ -103,8 +103,29 @@
                     android:layout_height="30dp"
                     android:layout_toRightOf="@+id/waitTxt"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
                     android:text="Q" />
+
+                <TextView
+                    android:id="@+id/peopleTxt"
+                    android:layout_below="@+id/waitTxt"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จำนวนที่นั่ง : "
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/counterTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/peopleTxt"
+                    android:layout_below="@+id/txtQue"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="25dp"
+                    android:text="Counter" />
 
             </RelativeLayout>
 
